@@ -1,0 +1,42 @@
+[
+  {
+    "key": "dennis",
+    "title": "Dennis Publishing",
+    "logo": "http://fountainjs.io/assets/imgs/gulp.png",
+    "dates": "May-September, December 2016",
+    "text": "At Dennis I worked as a full stack developer performing drupal maintenance, development and design of Dennis Publishing websites including Den of Geek, The Week, Cyclist.co.uk, alphr.co.uk and more.",
+    "skills":["Drupal 7","drush", "php", "javascript", "HTML", "jQuery", "SASS", "SMACSS", "grunt", "GIT", "Mercurial", "responsive development", "Kanban"]
+  },
+  {
+    "key": "sapient",
+    "title": "SapientNitro",
+    "logo": "http://fountainjs.io/assets/imgs/gulp.png",
+    "dates": "March - May 2016",
+    "text": "I helped set up the front end on the bulk of a lot of pages for the new US site of dove.com. We used Sapient’s backbone based Unilever platform and worked closely with the designers to follow Dove’s strict design guidelines. I also worked as a consultant for the Lynx team in developing concepts for a new Lynx campaign, advising what was possible in HTML and developing concept animations to be used in later builds and client pitches.",
+    "skills":["javascript", "HTML", "SASS", "grunt", "GIT", "CSS animations"]
+  },
+  {
+    "key": "siteyourart",
+    "title": "Site Your Art",
+    "logo": "http://fountainjs.io/assets/imgs/gulp.png",
+    "dates": "2014 - ongoing",
+    "text": "This is a project I have conceived, built, designed and developed on my own. It is a website for creatives (mostly actors) to set up their own online portfolio and website. Built on the Drupal platform.",
+    "skills":["HTML 5", "CSS",  "javascript", "LESS", "Drupal 7", "GIT", "Responsive"]
+  },
+  {
+    "key": "crocodile",
+    "title": "The Crocodile",
+    "logo": "http://fountainjs.io/assets/imgs/gulp.png",
+    "dates": "Jan - March 2016",
+    "text": "At Dennis I worked as a full stack developer performing drupal maintenance, development and design of Dennis Publishing websites including Den of Geek, The Week, Cyclist.co.uk, alphr.co.uk and more.",
+    "skills":["Drupal 8", "Bootstrap", "javascript", "HTML", "jQuery", "LESS", "grunt", "GIT", "responsive design"]
+  },
+  {
+    "key": "akqa",
+    "title": "AKQA",
+    "logo": "http://fountainjs.io/assets/imgs/gulp.png",
+    "dates": "some dates",
+    "text": "Working on a web app for Nike for International Womens Week.",
+    "skills":["Javascript", "HTML",  "Adobe CQ5", "OOJS", "SASS", "GIT", "Responsive"]
+  }
+]

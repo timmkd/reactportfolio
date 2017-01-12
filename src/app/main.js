@@ -1,30 +1,23 @@
 import React, {Component} from 'react';
 import {Header} from './header';
 import {Title} from './title';
-import {Techs} from './techs/techs';
+import {Jobs} from './jobs';
+import {SearchBar} from './searchbar';
 import {Footer} from './footer';
 
-const styles = {
-  container: {
-    display: 'flex',
-    flexDirection: 'column',
-    minHeight: '100%'
-  },
-  main: {
-    flex: 1,
-    display: 'flex',
-    flexDirection: 'column'
-  }
-};
-
 export class Main extends Component {
+  handleSearch() {
+    console.log('search');
+  }
+
   render() {
     return (
-      <div style={styles.container}>
+      <div>
         <Header/>
-        <main style={styles.main}>
+        <main>
           <Title/>
-          <Techs/>
+          <SearchBar onUserInput={this.handleSearch}/>
+          <Jobs/>
         </main>
         <Footer/>
       </div>
