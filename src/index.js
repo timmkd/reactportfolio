@@ -9,8 +9,8 @@ import {Main} from './app/main';
 import './index.scss';
 
 ReactDOM.render(
-  <Router history={browserHistory}>
-    <Route path="/" component={Main}/>
-  </Router>,
-  document.getElementById('root')
+	<Router history={browserHistory}>
+		<Route path="/" component={Main}/>
+	</Router>,
+	document.getElementById('root')
 );

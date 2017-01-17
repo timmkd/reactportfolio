@@ -16,3 +16,15 @@ a {
     color: #5aadbb;
   }
 }
+
+.jobs {
+	display:block;
+}
+
+.job {
+	display:inline-block;
+	vertical-align:top;
+	width:200px;
+	border:1px solid black;
+	padding:20px;
+}

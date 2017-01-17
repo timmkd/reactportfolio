@@ -4,23 +4,44 @@ import {Title} from './title';
 import {Jobs} from './jobs';
 import {SearchBar} from './searchbar';
 import {Footer} from './footer';
+import axios from 'axios';
 
 export class Main extends Component {
-  handleSearch() {
-    console.log('search');
-  }
+	constructor() {
+		super();
+		this.state = {
+			jobs: [],
+			filter: ''
+		};
+		this.handleSearch = this.handleSearch.bind(this);
+	}
 
-  render() {
-    return (
-      <div>
-        <Header/>
-        <main>
-          <Title/>
-          <SearchBar onUserInput={this.handleSearch}/>
-          <Jobs/>
-        </main>
-        <Footer/>
-      </div>
-    );
-  }
+	componentDidMount() {
+		axios
+			.get('app/jobs.json')
+			.then(response => {
+				console.log(response);
+				this.setState({jobs: response.data});
+			});
+	}
+
+	handleSearch(filter) {
+		this.setState({filter});
+		console.log('the state is', this.state.filter);
+	}
+
+	render() {
+		return (
+			<div>
+				<Header/>
+				<main>
+					<Title/>
+					<SearchBar onUserInput={this.handleSearch}/>
+					The state is: {this.state.filter}
+					<Jobs jobs={this.state.jobs} filter={this.state.filter}/>
+				</main>
+				<Footer/>
+			</div>
+		);
+	}
 }
