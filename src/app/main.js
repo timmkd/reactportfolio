@@ -17,6 +17,8 @@ export class Main extends Component {
 		};
 		this.handleSearch = this.handleSearch.bind(this);
 		this.getSkills = this.getSkills.bind(this);
+		this.setFilter = this.setFilter.bind(this);
+		this.handleClickSkill = this.handleClickSkill.bind(this);
 	}
 
 	componentDidMount() {
@@ -48,17 +50,25 @@ export class Main extends Component {
 		console.log('the state is', this.state.filter);
 	}
 
+	handleClickSkill(filter) {
+		this.setState({filter});
+	}
+
+	setFilter(filter) {
+		this.setState({filter});
+	}
+
 	render() {
 		return (
 			<div>
 				<Header/>
 				<main>
 					<Title/>
-					<SearchBar onUserInput={this.handleSearch}/>
+					<SearchBar onUserInput={this.handleSearch} filterText={this.state.filter}/>
 					<p>The state is: {this.state.filter}</p>
 					<h2>Skills</h2>
-					<Skills skills={this.state.skills}/>
-					<Jobs jobs={this.state.jobs} filter={this.state.filter}/>
+					<Skills skills={this.state.skills} onClickSkill={this.handleClickSkill} search={this.state.filter}/>
+					<Jobs jobs={this.state.jobs} filter={this.state.filter} search={this.state.filter}/>
 				</main>
 				<Footer/>
 			</div>

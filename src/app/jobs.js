@@ -11,14 +11,17 @@ export class Jobs extends Component {
 
 	jobMatch(job, filter) {
 		console.log('jobmatch', job, filter);
-		if (job.skills.indexOf(filter)) {
-			for (let skill of job.skills) {
-				if (skill.toLowerCase().indexOf(filter.toLowerCase()) !== -1) {
-					console.log('skillmatch', skill, skill.indexOf(filter), filter);
-					return true;
-				}
+		for (let skill of job.skills) {
+			if (skill.toLowerCase().indexOf(filter.toLowerCase()) !== -1) {
+				console.log('skillmatch', skill, skill.indexOf(filter), filter);
+				return true;
 			}
 		}
+
+		if (job.text.toLowerCase().indexOf(filter.toLowerCase()) !== -1) {
+			return true;
+		}
+
 		return false;
 	}
 
@@ -28,7 +31,7 @@ export class Jobs extends Component {
 			if (this.props.filter && !this.jobMatch(job, this.props.filter)) {
 				return false;
 			}
-			rows.push(<Job key={job.key} job={job}/>);
+			rows.push(<Job key={job.key} job={job} search={this.props.search}/>);
 			return true;
 		});
 		return (
@@ -46,5 +49,6 @@ export class Jobs extends Component {
 
 Jobs.propTypes = {
 	jobs: React.PropTypes.object.isRequired,
-	filter: React.PropTypes.object.isRequired
+	filter: React.PropTypes.object.isRequired,
+	search: React.PropTypes.object.isRequired
 };

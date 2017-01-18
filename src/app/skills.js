@@ -1,11 +1,24 @@
 import React, {Component} from 'react';
+import {Searchable} from './searchable';
 
 export class Skills extends Component {
+	constructor(props) {
+		super(props);
+		this.handleClickSkill = this.handleClickSkill.bind(this);
+	}
+
+	handleClickSkill(skill) {
+		this.props.onClickSkill(skill);
+	}
+
 	render() {
 		let rows = [];
 		this.props.skills.map(skill => {
 			skill = skill.toLowerCase();
-			rows.push(<li className="skill" key={'skill-' + skill}>{skill}</li>);
+			rows.push(
+				<li className="skill" key={'skill-' + skill} onClick={() => this.handleClickSkill(skill)}>
+					<Searchable text={skill} search={this.props.search}/>
+				</li>);
 			return true;
 		});
 		return (
@@ -19,5 +32,7 @@ export class Skills extends Component {
 }
 
 Skills.propTypes = {
-	skills: React.PropTypes.object.isRequired
+	skills: React.PropTypes.object.isRequired,
+	search: React.PropTypes.object.isRequired,
+	onClickSkill: React.PropTypes.object.isRequired
 };
