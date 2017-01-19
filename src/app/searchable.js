@@ -10,7 +10,7 @@ export class Searchable extends Component {
 	highlight(text, search) {
 		const index = text.toLowerCase().indexOf(search.toLowerCase());
 		const regex = new RegExp(search, 'ig');
-		if (search.length > 2 && index) {
+		if (search.length > 2 && index > -1) {
 			return text.replace(regex, '<strong>$&</strong>');
 		}
 		return text;
