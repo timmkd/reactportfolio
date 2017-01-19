@@ -28,15 +28,31 @@
     "title": "The Crocodile",
     "logo": "img/croc.png",
     "dates": "Jan - March 2016",
-    "text": "At Dennis I worked as a full stack developer performing drupal maintenance, development and design of Dennis Publishing websites including Den of Geek, The Week, Cyclist.co.uk, alphr.co.uk and more.",
+    "text": "Working on a Drupal 8 website for a client called Waypoint. I was the sole developer on this site. I was provided with desktop designs but had to adapt them for mobile.",
     "skills":["Drupal 8", "Bootstrap", "javascript", "HTML", "jQuery", "LESS", "grunt", "GIT", "responsive design"]
   },
   {
-    "key": "akqa",
+    "key": "akqa1",
     "title": "AKQA",
     "logo": "img/akqa.png",
-    "dates": "some dates",
-    "text": "Working on a web app for Nike for International Womens Week.",
+    "dates": "November 2015",
+    "text": "Working on a web app for Nike for International Womens Week. The app was built in CQ5 and a lot of my involvement involved integration with a Nike login web service. A lot of work with Ajax requests (without jQuery) and local storage.",
     "skills":["Javascript", "HTML",  "Adobe CQ5", "OOJS", "SASS", "GIT", "Responsive"]
+  },
+  {
+    "key": "mediamonks",
+    "title": "Media Monks",
+    "logo": "img/mediamonks.png",
+    "dates": "October 2015",
+    "text": "Assisting on the <a href='http://www.guiness.com'>Guinness.com</a> website. Site was built in backbone marionette. A lot of my involvement was working on accessibility and getting the site to work on older mobile devices including native Samsung Galaxy browsers.",
+    "skills":["HTML5","CSS", "javascript","SASS","backbone","marionette","gulp","accessibility"]
+  },
+  {
+    "key": "telegraph",
+    "title": "The Telegraph",
+    "logo": "img/telegraph.jpg",
+    "dates": "October 2015",
+    "text": "Sole Developer. Built a mini website for Fenwick and the Telegraph to act as an advent calendar counting down The 12 Days of Christmas.",
+    "skills":["Yeoman","Bower","Bootstrap","JSON","HTML5","CSS", "javascript","SASS","GIT","ResponsiveDesign"]
   }
 ]
