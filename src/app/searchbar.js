@@ -23,6 +23,7 @@ export class SearchBar extends Component {
 					ref={input => {
 						this.textInput = input;
 					}}
+					className="searchbar"
 					/>
 			</form>
 		);

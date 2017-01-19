@@ -1,0 +1,20 @@
+.header{
+	@include full-width-el();
+	background:$color-header-bg;
+	color:$color-header-text;
+	padding:10vh $padding-base $padding-base;
+	margin-top:-$padding-base;
+
+
+	.skill {
+		padding:3px 1px 1px;
+		font-size:$font-size-h5;
+		border-bottom:1px solid white;
+		cursor:pointer;
+
+		&:hover{
+			font-weight: 400;
+		}	
+	}
+
+}

@@ -1,56 +1,11 @@
-html, body, #root {
-  margin: 0;
-  height: 100%;
-  font-family: 'Open Sans', sans-serif;
-}
+@import 'scss/reset';
+@import 'scss/fonts';
+@import 'scss/vars';
+@import 'scss/mixins';
+@import 'scss/structure';
+@import 'scss/type';
 
-body, h1, h2, h3 {
-  font-weight: 300;
-  margin-top: 0;
-}
-
-a {
-  color: white;
-  text-decoration: none;
-
-  &:hover {
-    color: #5aadbb;
-  }
-}
-
-.jobs {
-	display:block;
-}
-
-.job {
-	clear:both;
-	margin-bottom:50px;
-
-	img{
-		max-width: 100%;
-		overflow:hidden;
-		float:left;
-
-		@media(min-width:768px){
-			width:120px;
-			margin-right:20px;
-		}
-	}
-	.job-text {
-		overflow:hidden;
-	}
-}
-
-.skills {
-	ul{
-		margin:0 0 50px;
-		padding:0;
-	}
-}
-
-.skill {
-	margin:0;
-	padding:0;
-	display:inline-block;
-	margin-right:15px;
-}
+@import 'scss/header';
+@import 'scss/jobs';
+@import 'scss/skills';
+@import 'scss/searchbar';
