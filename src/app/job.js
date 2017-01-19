@@ -7,7 +7,7 @@ export class Job extends Component {
 		return (
 			<div className="job">
 				<img src={this.props.job.logo}/>
-				<div className="job-text">
+				<div className="job--text">
 					<h3 className="job--title">
 						{this.props.job.title}
 					</h3>

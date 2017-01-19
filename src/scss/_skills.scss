@@ -1,7 +1,11 @@
 .skills {
 	ul{
-		margin:0 0 50px;
+		margin:0 0 $padding-base;
 		padding:0;
+
+		@media(min-width:$desktop){
+			margin-bottom:$padding-base * 2.5;
+		}
 	}
 }
 

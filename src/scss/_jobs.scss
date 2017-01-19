@@ -4,19 +4,47 @@
 
 .job {
 	clear:both;
-	margin-bottom:50px;
+	margin-bottom:$padding-base * 1.5;
 
 	img{
-		max-width: 100%;
+		max-width: 45%;
 		overflow:hidden;
-		float:left;
+		margin: 0 auto $padding-base / 2;
+		display: block;
 
-		@media(min-width:768px){
+		@media(min-width:$narrow){
+			float:left;
 			width:120px;
 			margin-right:20px;
 		}
 	}
-	.job-text {
+	&--text {
 		overflow:hidden;
+	}
+	&--date{
+		font-style: italic;
+	}
+	&--descrip {
+		margin-bottom:$padding-base / 3;
+	}
+
+	.skills {
+		&:before{
+			content: "Skillsets:";
+			font-weight: 400;
+			margin-right: 10px;
+		}
+		ul {
+			display: inline;
+		}
+	}
+	.skill{
+		margin-right: 3px;
+		div{
+			display: inline;
+		}
+		&:after{
+			content:",";
+		}
 	}
 }

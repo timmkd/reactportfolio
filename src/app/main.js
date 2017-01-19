@@ -61,12 +61,16 @@ export class Main extends Component {
 		return (
 			<div>
 				<header className="header">
-					<Title/>
-					<SearchBar onUserInput={this.handleSearch} filterText={this.state.filter}/>
-					<Skills skills={this.state.skills} onClickSkill={this.handleClickSkill} search={this.state.filter}/>
+					<div className="container">
+						<Title/>
+						<SearchBar onUserInput={this.handleSearch} filterText={this.state.filter} search={this.state.filter}/>
+						<Skills skills={this.state.skills} onClickSkill={this.handleClickSkill} search={this.state.filter}/>
+					</div>
 				</header>
 				<main>
-					<Jobs jobs={this.state.jobs} filter={this.state.filter} search={this.state.filter}/>
+					<div className="container">
+						<Jobs jobs={this.state.jobs} filter={this.state.filter} search={this.state.filter}/>
+					</div>
 				</main>
 				<Footer/>
 			</div>

@@ -2,9 +2,13 @@
 	@include full-width-el();
 	background:$color-header-bg;
 	color:$color-header-text;
-	padding:10vh $padding-base $padding-base;
+	padding: $padding-base;
 	margin-top:-$padding-base;
+	margin-bottom:$padding-base * 2;
 
+	@media(min-width:$desktop){
+		padding:10vh $padding-base $padding-base;
+	}
 
 	.skill {
 		padding:3px 1px 1px;
@@ -12,9 +16,12 @@
 		border-bottom:1px solid white;
 		cursor:pointer;
 
-		&:hover{
+		&:hover,
+		strong {
 			font-weight: 400;
-		}	
+			color:$color-secondary;
+			border-bottom-color:$color-secondary;
+		}
 	}
 
 }
