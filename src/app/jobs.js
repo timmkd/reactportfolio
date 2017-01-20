@@ -37,7 +37,7 @@ export class Jobs extends Component {
 		return (
 			<div>
 				<h2>
-					Past Jobs
+					Recent Jobs
 				</h2>
 				<div>
 					{rows}

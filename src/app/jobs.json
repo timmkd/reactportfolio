@@ -1,10 +1,19 @@
 [
+
+  {
+    "key": "siteyourart",
+    "title": "Site Your Art",
+    "logo": "img/sya.png",
+    "dates": "2014 - ongoing",
+    "text": "<a target='_blank' href='http://www.siteyourart.com'>Site Your Art</a> is a project I have conceived, built, designed and developed on my own. It is a website builder for creatives (mostly actors) to set up their own online portfolio and website. Built on the Drupal platform.",
+    "skills":["html", "CSS",  "javascript", "LESS", "Drupal 7", "GIT", "Responsive"]
+  },
   {
     "key": "dennis",
     "title": "Dennis Publishing",
     "logo": "img/dennis.jpg",
     "dates": "May-September, December 2016",
-    "text": "At Dennis I worked as a full stack developer performing drupal maintenance, development and design of Dennis Publishing websites including Den of Geek, The Week, Cyclist.co.uk, alphr.co.uk and more.",
+    "text": "At Dennis I worked as a full stack developer performing drupal maintenance, development and design of Dennis Publishing websites including <a target='_blank' href='http://www.denofgeek.com'>Den of Geek</a>, <a target='_blank' href='http://www.theweek.co.uk'>The Week</a>, <a target='_blank' href='http://www.cyclist.co.uk'>Cyclist.co.uk</a>, <a target='_blank' href='http://www.alphr.co.uk'>alphr.co.uk</a> and more.",
     "skills":["Drupal 7","drush", "php", "javascript", "HTML", "jQuery", "SASS", "SMACSS", "grunt", "GIT", "Mercurial", "responsive development", "Kanban"]
   },
   {
@@ -12,40 +21,32 @@
     "title": "SapientNitro",
     "logo": "img/sapient.png",
     "dates": "March - May 2016",
-    "text": "I helped set up the front end on the bulk of a lot of pages for the new US site of dove.com. We used Sapient’s backbone based Unilever platform and worked closely with the designers to follow Dove’s strict design guidelines. I also worked as a consultant for the Lynx team in developing concepts for a new Lynx campaign, advising what was possible in HTML and developing concept animations to be used in later builds and client pitches.",
+    "text": "<p>I helped set up the front end on the bulk of a lot of pages for the new <a target='_blank' href='http://www.dove.com/'>Dove.com</a>. We used Sapient’s backbone based Unilever platform and worked closely with the designers to follow Dove’s strict design guidelines.</p><p>I also worked as a consultant for the Lynx team in developing concepts for a new Lynx campaign, advising what was possible in HTML and developing concept animations to be used in later builds and client pitches.</p>",
     "skills":["javascript", "HTML", "SASS", "grunt", "GIT", "CSS animations"]
   },
   {
-    "key": "siteyourart",
-    "title": "Site Your Art",
-    "logo": "img/sya.png",
-    "dates": "2014 - ongoing",
-    "text": "This is a project I have conceived, built, designed and developed on my own. It is a website for creatives (mostly actors) to set up their own online portfolio and website. Built on the Drupal platform.",
-    "skills":["HTML 5", "CSS",  "javascript", "LESS", "Drupal 7", "GIT", "Responsive"]
-  },
-  {
-    "key": "crocodile",
+    "key": "crocodile2",
     "title": "The Crocodile",
     "logo": "img/croc.png",
     "dates": "Jan - March 2016",
-    "text": "Working on a Drupal 8 website for a client called Waypoint. I was the sole developer on this site. I was provided with desktop designs but had to adapt them for mobile.",
+    "text": "Working on a Drupal 8 website for <a target='_blank' href='http://waypointcapital.net'>Waypoint Capital</a>. I was the sole developer on this site. I was provided with desktop designs but had to adapt them for mobile.",
     "skills":["Drupal 8", "Bootstrap", "javascript", "HTML", "jQuery", "LESS", "grunt", "GIT", "responsive design"]
   },
   {
-    "key": "akqa1",
+    "key": "akqa3",
     "title": "AKQA",
     "logo": "img/akqa.png",
     "dates": "November 2015",
     "text": "Working on a web app for Nike for International Womens Week. The app was built in CQ5 and a lot of my involvement involved integration with a Nike login web service. A lot of work with Ajax requests (without jQuery) and local storage.",
-    "skills":["Javascript", "HTML",  "Adobe CQ5", "OOJS", "SASS", "GIT", "Responsive"]
+    "skills":["Javascript", "HTML",  "Adobe CQ5", "OOJS", "SASS", "GIT", "Responsive", "ajax"]
   },
   {
     "key": "mediamonks",
     "title": "Media Monks",
     "logo": "img/mediamonks.png",
     "dates": "October 2015",
-    "text": "Assisting on the <a href='http://www.guiness.com'>Guinness.com</a> website. Site was built in backbone marionette. A lot of my involvement was working on accessibility and getting the site to work on older mobile devices including native Samsung Galaxy browsers.",
-    "skills":["HTML5","CSS", "javascript","SASS","backbone","marionette","gulp","accessibility"]
+    "text": "Assisting on the <a target='_blank' href='http://www.guiness.com'>Guinness.com</a> website. Site was built in backbone marionette. A lot of my involvement was working on accessibility and getting the site to work on older mobile devices including native Samsung Galaxy browsers.",
+    "skills":["html","CSS", "javascript","SASS","backbone","marionette","gulp","accessibility"]
   },
   {
     "key": "telegraph",
@@ -53,6 +54,78 @@
     "logo": "img/telegraph.jpg",
     "dates": "October 2015",
     "text": "Sole Developer. Built a mini website for Fenwick and the Telegraph to act as an advent calendar counting down The 12 Days of Christmas.",
-    "skills":["Yeoman","Bower","Bootstrap","JSON","HTML5","CSS", "javascript","SASS","GIT","ResponsiveDesign"]
+    "skills":["Yeoman","Bower","Bootstrap","JSON","html","CSS", "javascript","SASS","GIT","Responsive", "CSS Animation"]
+  },
+  {
+    "key": "akqa2",
+    "title": "AKQA",
+    "logo": "img/akqa.png",
+    "dates": "June - August 2015",
+    "text": "Involved in building the Contact section of the Barclays Help and Support website. The website is built on CQ5. Lots of css and animation involved in this. I was in charge of the side panel slideout, especially the css animations, that can be seen <a target='_blank' href='https://www.help.barclays.co.uk/faq/security-fraud/fraud-contact.html?contactpanel=0'>here</a>.",
+    "skills":["html","CSS", "javascript","SASS","GIT","Grunt","Responsive","CSS Animation", "Adobe CQ5"]
+  },
+  {
+    "key": "akqa",
+    "title": "AKQA",
+    "logo": "img/akqa.png",
+    "dates": "May - June 2015",
+    "text": "Nike ZOOM. We built a page for Nike, tracking your fastest run throughout the Month of August with the Nike running app.",
+    "skills":["html", "CSS", "javascript", "SASS", "GIT", "Grunt", "Responsive Design"]
+  },
+  {
+    "key": "crocodile",
+    "title": "The Crocodile",
+    "logo": "img/croc.png",
+    "dates": "March - May 2015",
+    "text": "Sole developer. Drupal theming and developing for extreme sailing team <a target='_blank' href='https://www.alinghi.com/'>Alinghi.</a>",
+    "skills":["Drupal 7", "Bootstrap", "javascript", "HTML", "jQuery", "LESS", "grunt", "GIT", "responsive design"]
+  },
+  {
+    "key": "oliveri",
+    "title": "Oliveri",
+    "logo": "img/oliveri.png",
+    "dates": "December 2014",
+    "text": "<a target='_blank' href='http://www.oliverihome.com/ '>Oliveri</a> is an Italian-based homeware eCommerce website. Built on Magento. I was in charge of building all their front end templates.",
+    "skills":["html", "CSS", "javascript", "Responsive", "Magento", "CSS animation", "SASS"]
+  },
+  {
+    "key": "blackswan",
+    "title": "Black Swan",
+    "logo": "img/blackswan.png",
+    "dates": "May - July 2014",
+    "text": "Worked on a Panasonic inflight entertainment system to work on personal devices on flights for Dragon Air and Virgin Airlines.",
+    "skills":["html","CSS", "javascript","OOCSS","CSS animation","Angular","GIT","Responsive"]
+  },
+  {
+    "key": "1000heads",
+    "title": "1000 Heads",
+    "logo": "img/1000heads.jpg",
+    "dates": "April 2014",
+    "text": "Working on an <a target='_blank' href='https://itunes.apple.com/gb/app/curryspcworld-tv-size-finder/id889929605?mt=8'>iPhone/AndroidTV Size Finder app</a> for Curry’s Digital.",
+    "skills":["html", "CSS", "javascript", "SASS", "Backbone"]
+  },
+  {
+    "key": "mccormackmorrison",
+    "title": "McCormack & Morrison",
+    "logo": "img/mm.png",
+    "dates": "January - March 2014",
+    "text": "Building all front end for corporate website of <a target='_blank' href='http://www.glhhotels.com/'>GLH Hotels</a> and <a target='_blank' href='http:// greatfestivalofcreativity.co.uk/'>GREAT Britain</a>.",
+    "skills":["html", "CSS", "javascript", "SASS", "GIT", "JSON", "Responsive", "Google Maps", "CSS animation", "Bootstrap"]
+  },
+  {
+    "key": "mirror",
+    "title": "Trinity Mirror",
+    "logo": "img/mirror.png",
+    "dates": "September 2013 - January 2014",
+    "text": "Working on web applications and core development for the <a target='_blank' href='http://www.mirror.co.uk'>Daily Mirror</a> and other national newspapers. I also built the API for all their <a target='_blank' href='http://www.mirror.co.uk/play/quizzes/'>quizzes</a>.",
+    "skills":["HTML","CSS", "jQuery","javascript","LESS","GIT","Ajax","JSON","Responsive"]
+  },
+  {
+    "key": "velti",
+    "title": "Velti",
+    "logo": "img/velti.png",
+    "dates": "January - July 2013",
+    "text": "Building a Panasonic Inflight Entertainment System to work on mobile and laptop devices for clients including British Airways, KLM, Japan Airlines and Air France.",
+    "skills":["HTML", "CSS", "CSS Animations", "GIT", "Responsive Design"]
   }
 ]

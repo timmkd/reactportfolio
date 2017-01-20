@@ -17,7 +17,7 @@ export class SearchBar extends Component {
 		return (
 			<form>
 				<input
-					placeholder="Search"
+					placeholder="Filter jobs by keyword..."
 					value={this.props.filterText}
 					onChange={this.handleChange}
 					ref={input => {

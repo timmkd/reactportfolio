@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Title} from './title';
+import {Header} from './header';
 import {Jobs} from './jobs';
 import {Skills} from './skills';
 import {SearchBar} from './searchbar';
@@ -60,13 +60,13 @@ export class Main extends Component {
 	render() {
 		return (
 			<div>
-				<header className="header">
+				<Header/>
+				<div className="filters">
 					<div className="container">
-						<Title/>
 						<SearchBar onUserInput={this.handleSearch} filterText={this.state.filter} search={this.state.filter}/>
 						<Skills skills={this.state.skills} onClickSkill={this.handleClickSkill} search={this.state.filter}/>
 					</div>
-				</header>
+				</div>
 				<main>
 					<div className="container">
 						<Jobs jobs={this.state.jobs} filter={this.state.filter} search={this.state.filter}/>

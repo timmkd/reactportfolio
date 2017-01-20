@@ -8,6 +8,10 @@
 		display: inline-block;
 	}
 
+	a {
+		border-bottom: 0;
+	}
+
 	&--icon {
 		color:white;
 		text-decoration: none;
@@ -15,6 +19,13 @@
 
 		& > span {
 			display:none;
+		}
+	}
+
+	.icon-mobile {
+		margin-left:$padding-base;
+		&:before {
+			margin:0;
 		}
 	}
 }
