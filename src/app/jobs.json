@@ -99,7 +99,7 @@
   {
     "key": "1000heads",
     "title": "1000 Heads",
-    "logo": "img/1000heads.jpg",
+    "logo": "img/1000heads.png",
     "dates": "April 2014",
     "text": "Working on an <a target='_blank' href='https://itunes.apple.com/gb/app/curryspcworld-tv-size-finder/id889929605?mt=8'>iPhone/AndroidTV Size Finder app</a> for Curry’s Digital.",
     "skills":["html", "CSS", "javascript", "SASS", "Backbone"]
