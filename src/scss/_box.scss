@@ -1,0 +1,22 @@
+.box {
+	width:20%;
+	display:inline-block;
+	position:relative;
+	cursor:pointer;
+
+	&:before {
+		display:block;
+		content:" ";
+		margin-top:100%;
+		background:red;
+	}
+
+	img {
+		display: block;
+		position:absolute;
+		top:50%;
+		left:50%;
+		width:75%;
+		transform:translate3d(-50%,-50%,0);
+	}
+}
