@@ -7,7 +7,6 @@ export class Jobs extends Component {
 	constructor() {
 		super();
 		this.state = {
-			jobs: [],
 			display: 'list'
 		};
 		this.jobMatch = this.jobMatch.bind(this);
@@ -15,7 +14,6 @@ export class Jobs extends Component {
 	}
 
 	jobMatch(job, filter) {
-		console.log('jobmatch', job, filter);
 		for (let skill of job.skills) {
 			if (skill.toLowerCase().indexOf(filter.toLowerCase()) !== -1) {
 				console.log('skillmatch', skill, skill.indexOf(filter), filter);
@@ -59,7 +57,7 @@ export class Jobs extends Component {
 }
 
 Jobs.propTypes = {
-	jobs: React.PropTypes.object.isRequired,
-	filter: React.PropTypes.object.isRequired,
-	search: React.PropTypes.object.isRequired
+	jobs: React.PropTypes.array.isRequired,
+	filter: React.PropTypes.string.isRequired,
+	search: React.PropTypes.string.isRequired
 };

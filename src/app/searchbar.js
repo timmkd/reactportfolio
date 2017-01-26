@@ -8,12 +8,10 @@ export class SearchBar extends Component {
 	}
 
 	handleChange() {
-		console.log('handlechange');
 		this.props.onUserInput(this.textInput.value);
 	}
 
 	render() {
-		console.log('render');
 		return (
 			<form>
 				<input
@@ -31,6 +29,6 @@ export class SearchBar extends Component {
 }
 
 SearchBar.propTypes = {
-	onUserInput: React.PropTypes.object.isRequired,
-	filterText: React.PropTypes.object.isRequired
+	onUserInput: React.PropTypes.func.isRequired,
+	filterText: React.PropTypes.string.isRequired
 };

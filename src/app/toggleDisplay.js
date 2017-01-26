@@ -31,10 +31,9 @@ export class ToggleDisplay extends Component {
 		let rows = [];
 		this.state.displays.map(display => {
 			const activeClass = this.props.activeDisplay === display.name ? ' active' : '';
-			console.log(this.props.activeDisplay);
 			const className = 'toggle-display--' + display.name + ' icon-' + display.icon + activeClass;
 			rows.push(
-				<li>
+				<li key={display.name}>
 					<button className={className} onClick={() => this.handleToggle(display.name)}>
 						<span className="toggle-display--text">{display.text}</span>
 					</button>
@@ -57,6 +56,6 @@ export class ToggleDisplay extends Component {
 }
 
 ToggleDisplay.propTypes = {
-	onToggle: React.PropTypes.object.isRequired,
-	activeDisplay: React.PropTypes.object.isRequired
+	onToggle: React.PropTypes.func.isRequired,
+	activeDisplay: React.PropTypes.string.isRequired
 };

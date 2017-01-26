@@ -33,9 +33,9 @@ export class Main extends Component {
 		let skills = [];
 		jobs.map(job => {
 			job.skills.map(skill => {
-				console.log('slk');
-				if (skills.indexOf(skill) === -1) {
-					skills.push(skill);
+				if (skills.indexOf(skill.toLowerCase()) === -1) {
+					console.log(skills);
+					skills.push(skill.toLowerCase());
 				}
 				return true;
 			});

@@ -12,7 +12,7 @@ export class Job extends Component {
 						{this.props.job.title}
 					</h3>
 					<p className="job--date">{this.props.job.dates}</p>
-					<p className="job--descrip"><Searchable text={this.props.job.text} search={this.props.search}/></p>
+					<div className="job--descrip"><Searchable text={this.props.job.text} search={this.props.search}/></div>
 					<Skills skills={this.props.job.skills} search={this.props.search}/>
 				</div>
 			</div>
@@ -22,5 +22,5 @@ export class Job extends Component {
 
 Job.propTypes = {
 	job: React.PropTypes.object.isRequired,
-	search: React.PropTypes.object.isRequired
+	search: React.PropTypes.string.isRequired
 };
