@@ -34,7 +34,6 @@ export class Main extends Component {
 		jobs.map(job => {
 			job.skills.map(skill => {
 				if (skills.indexOf(skill.toLowerCase()) === -1) {
-					console.log(skills);
 					skills.push(skill.toLowerCase());
 				}
 				return true;
@@ -46,7 +45,6 @@ export class Main extends Component {
 
 	handleSearch(filter) {
 		this.setState({filter});
-		console.log('the state is', this.state.filter);
 	}
 
 	handleClickSkill(filter) {

@@ -16,7 +16,6 @@ export class Jobs extends Component {
 	jobMatch(job, filter) {
 		for (let skill of job.skills) {
 			if (skill.toLowerCase().indexOf(filter.toLowerCase()) !== -1) {
-				console.log('skillmatch', skill, skill.indexOf(filter), filter);
 				return true;
 			}
 		}

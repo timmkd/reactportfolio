@@ -46,7 +46,6 @@ export class ToggleDisplay extends Component {
 	}
 
 	render() {
-		console.log('render');
 		return (
 			<ul className="toggle-display">
 				{this.getToggles()}
