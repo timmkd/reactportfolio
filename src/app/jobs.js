@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 
 import {Job} from './job';
-import {ToggleDisplay} from './toggleDisplay';
 
 export class Jobs extends Component {
 	constructor() {
@@ -46,7 +45,6 @@ export class Jobs extends Component {
 				<h2>
 					Recent Jobs
 				</h2>
-				<ToggleDisplay onToggle={this.handleToggle} activeDisplay={this.state.display}/>
 				<div>
 					{rows}
 				</div>
