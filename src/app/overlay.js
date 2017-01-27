@@ -21,7 +21,9 @@ export class Overlay extends Component {
 				<div className="overlay--behind" onClick={this.handleClose}></div>
 				<div className="overlay">
 					<div className="overlay--close icon-cancel" onClick={this.handleClose}></div>
-					<Jobs jobs={this.props.jobs}/>
+					<div className="overlay--inner">
+						<Jobs jobs={this.props.jobs}/>
+					</div>
 				</div>
 			</div>
 		);

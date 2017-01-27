@@ -11,7 +11,7 @@
 			padding:$padding-base;
 			overflow-y: scroll;
 
-			&.active{
+			.overlay--show &{
 				display: block;
 			}
 		}
@@ -34,6 +34,12 @@
 		top:50%;
 		transform:translate3d(-50%, -50%, 0);
 		padding:($padding-base * 2) ($padding-base * 2) $padding-base;
+		max-width:600px;
+		overflow-y: scroll;
+
+		&--show {
+			overflow:hidden;
+		}
 
 		&--wrapper {
 			position:fixed;
@@ -44,7 +50,7 @@
 			background:rgba($color-primary, .4);
 			display: none;
 
-			&.active {
+			.overlay--show  & {
 				display: block;
 			}
 		}
@@ -61,9 +67,14 @@
 			transition:filter .5s;
 			transform: translateZ(0);
 
-			&.active{
+			.overlay--show &{
 				filter:blur(10px);
 			}
+		}
+
+		&--inner {
+			max-height:70vh;
+			overflow-y: scroll;
 		}
 
 		&--close {

@@ -105,10 +105,12 @@ export class Main extends Component {
 			overlay: true,
 			overlayJobs: jobs
 		});
+		document.body.classList.add('overlay--show');
 	}
 
 	closeOverlay() {
 		this.setState({overlay: false});
+		document.body.classList.remove('overlay--show');
 	}
 
 	render() {
