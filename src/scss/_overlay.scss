@@ -1,4 +1,11 @@
 .overlay {
+	background:$color-overlay-bg;
+	position:fixed;
+	width:75%;
+	left:50%;
+	top:50%;
+	transform:translate3d(-50%, -50%, 0);
+	padding:($padding-base * 2) ($padding-base * 2) $padding-base;
 
 	&--wrapper {
 		position:fixed;
@@ -14,11 +21,28 @@
 		}
 	}
 
+	&--behind {
+		position:fixed;
+		top:0;
+		left:0;
+		right:0;
+		bottom:0;
+	}
+
 	&--outside{
 		transition:filter .5s;
+		transform: translateZ(0);
 
 		&.active{
 			filter:blur(10px);
 		}
+	}
+
+	&--close {
+		position:absolute;
+		top:$padding-base / 2;
+		right:$padding-base / 2;
+		font-size:30px;
+		cursor:pointer;
 	}
 }

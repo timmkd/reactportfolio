@@ -3,7 +3,6 @@
 	background:$color-header-bg;
 	color:$color-header-text;
 	padding: $padding-base;
-	margin-top:-$padding-base;
 
 	@media(min-width:$desktop){
 		padding:10vh $padding-base $padding-base;
@@ -18,7 +17,7 @@
 			color:$color-secondary;
 		}
 	}
-	
+
 	.social-icons--icon {
 		color:white;
 	}

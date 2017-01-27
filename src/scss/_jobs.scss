@@ -1,6 +1,14 @@
 .jobs {
-	display:block;
 	position:relative;
+
+	/*hide and show according to page display toggle*/
+	main & {
+		display:none;
+	}
+
+	.active-display--list main & {
+		display: block;
+	}
 }
 
 .job {

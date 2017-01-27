@@ -6,17 +6,20 @@ import {SearchBar} from './searchbar';
 import {Boxes} from './boxes';
 import {Footer} from './footer';
 import {Overlay} from './overlay';
+import {ToggleDisplay} from './toggleDisplay';
 import axios from 'axios';
 
 export class Main extends Component {
 	constructor() {
 		super();
 		this.state = {
+			activeDisplay: 'list',
 			jobs: [],
 			filteredJobs: [],
 			filter: '',
 			skills: [],
-			overlay: false
+			overlay: false,
+			overlayJobs: []
 		};
 		this.handleSearch = this.handleSearch.bind(this);
 		this.getSkills = this.getSkills.bind(this);
@@ -26,6 +29,7 @@ export class Main extends Component {
 		this.handleClickBox = this.handleClickBox.bind(this);
 		this.showOverlay = this.showOverlay.bind(this);
 		this.closeOverlay = this.closeOverlay.bind(this);
+		this.handleToggleDisplay = this.handleToggleDisplay.bind(this);
 	}
 
 	componentDidMount() {
@@ -83,16 +87,24 @@ export class Main extends Component {
 		this.updateFilteredJobs(filter);
 	}
 
+	handleToggleDisplay(activeDisplay) {
+		this.setState({activeDisplay});
+	}
+
 	handleClickSkill(filter) {
 		this.handleSearch(filter);
 	}
 
-	handleClickBox() {
-		this.showOverlay();
+	handleClickBox(jobs) {
+		console.log('handleClickBox', jobs);
+		this.showOverlay(jobs);
 	}
 
-	showOverlay() {
-		this.setState({overlay: true});
+	showOverlay(jobs) {
+		this.setState({
+			overlay: true,
+			overlayJobs: jobs
+		});
 	}
 
 	closeOverlay() {
@@ -101,11 +113,12 @@ export class Main extends Component {
 
 	render() {
 		let overlayOutsideClass = 'overlay--outside';
+		let activeDisplayClass = 'active-display--' + this.state.activeDisplay;
 		if (this.state.overlay) {
 			overlayOutsideClass += ' active';
 		}
 		return (
-			<div>
+			<div className={activeDisplayClass}>
 				<div className={overlayOutsideClass}>
 					<Header/>
 					<div className="filters">
@@ -116,13 +129,15 @@ export class Main extends Component {
 					</div>
 					<main>
 						<div className="container">
+							<h2>Recent Jobs</h2>
+							<ToggleDisplay onToggle={this.handleToggleDisplay} activeDisplay={this.state.activeDisplay}/>
 							<Boxes jobs={this.state.filteredJobs} filter={this.state.filter} search={this.state.filter} onClickBox={this.handleClickBox}/>
 							<Jobs jobs={this.state.filteredJobs} filter={this.state.filter} search={this.state.filter}/>
 						</div>
 					</main>
 					<Footer/>
 				</div>
-				<Overlay isActive={this.state.overlay} closeOverlay={this.closeOverlay}/>
+				<Overlay isActive={this.state.overlay} closeOverlay={this.closeOverlay} jobs={this.state.overlayJobs}/>
 			</div>
 		);
 	}

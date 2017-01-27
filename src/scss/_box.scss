@@ -1,8 +1,29 @@
+.boxes{
+	margin: 0 -3.25% ($padding-base * 2);
+
+	@media(min-width:$tablet){
+		margin: 0 -2.25% ($padding-base * 2);
+	}
+
+	/*hide and show according to page display toggle*/
+	main & {
+		display:none;
+	}
+
+	.active-display--icons main & {
+		display:block;
+	}
+}
+
 .box {
-	width:20%;
 	display:inline-block;
 	position:relative;
 	cursor:pointer;
+	width:33.33%;
+
+	@media(min-width:$tablet){
+		width:20%;
+	}
 
 	&:before {
 		display:block;

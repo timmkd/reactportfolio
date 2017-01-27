@@ -22,5 +22,5 @@ export class Job extends Component {
 
 Job.propTypes = {
 	job: React.PropTypes.object.isRequired,
-	search: React.PropTypes.string.isRequired
+	search: React.PropTypes.string
 };

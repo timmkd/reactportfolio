@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Jobs} from './jobs';
 
 export class Overlay extends Component {
 	constructor() {
@@ -16,13 +17,11 @@ export class Overlay extends Component {
 			wrapperClass += ' active';
 		}
 		return (
-			<div
-				className={wrapperClass}
-				onClick={this.handleClose}
-				>
+			<div className={wrapperClass}>
+				<div className="overlay--behind" onClick={this.handleClose}></div>
 				<div className="overlay">
-					<div className="overlay--inner">
-					</div>
+					<div className="overlay--close icon-cancel" onClick={this.handleClose}></div>
+					<Jobs jobs={this.props.jobs}/>
 				</div>
 			</div>
 		);
@@ -32,5 +31,6 @@ export class Overlay extends Component {
 Overlay.propTypes = {
 	icon: React.PropTypes.object,
 	isActive: React.PropTypes.bool.isRequired,
-	closeOverlay: React.PropTypes.func.isRequired
+	closeOverlay: React.PropTypes.func.isRequired,
+	jobs: React.PropTypes.array
 };

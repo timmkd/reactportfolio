@@ -24,9 +24,6 @@ export class Jobs extends Component {
 		});
 		return (
 			<div className={displayClass}>
-				<h2>
-					Recent Jobs
-				</h2>
 				<div>
 					{rows}
 				</div>
@@ -36,6 +33,6 @@ export class Jobs extends Component {
 }
 
 Jobs.propTypes = {
-	jobs: React.PropTypes.array.isRequired,
-	search: React.PropTypes.string.isRequired
+	jobs: React.PropTypes.array,
+	search: React.PropTypes.string
 };

@@ -25,7 +25,7 @@ export class Boxes extends Component {
 	}
 
 	getIcons(jobs) {
-		let icons = this.state.icons;
+		let icons = {};
 		jobs.map(job => {
 			if (job.name in icons) {
 				icons[job.name].jobs.push(job);
@@ -40,9 +40,9 @@ export class Boxes extends Component {
 		return icons;
 	}
 
-	showOverlay() {
+	showOverlay(jobs) {
 		console.log('click');
-		this.props.onClickBox();
+		this.props.onClickBox(jobs);
 	}
 
 	render() {
@@ -55,7 +55,7 @@ export class Boxes extends Component {
 					key={key}
 					icon={icon}
 					onClick={() => {
-						this.showOverlay();
+						this.showOverlay(icon.jobs);
 					}}
 					/>
 			);
