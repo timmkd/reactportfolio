@@ -1,13 +1,22 @@
 [
 
   {
+    "key": "cv",
+    "name": "cv",
+    "title": "Tim McDonald - Online CV",
+    "logo": "img/cv.png",
+    "dates": "",
+    "text": "This website is built using react.js. You can view the source code on <a href=''>github</a>. Filter results using the search box above, or view the jobs as icons by clicking the icon button above. Click on each icon to view more information about the related job. Also, try inspecting the code and components in a chrome inspector.",
+    "skills":["html", "CSS",  "javascript", "react.js", "json", "Sass", "GIT", "Responsive", "yeoman"]
+  },
+  {
     "key": "siteyourart",
     "name": "siteyourart",
     "title": "Site Your Art",
     "logo": "img/sya.png",
     "dates": "2014 - ongoing",
     "text": "<a target='_blank' href='http://www.siteyourart.com'>Site Your Art</a> is a project I have conceived, built, designed and developed on my own. It is a website builder for creatives (mostly actors) to set up their own online portfolio and website. Built on the Drupal platform.",
-    "skills":["html", "CSS",  "javascript", "LESS", "Drupal 7", "GIT", "Responsive"]
+    "skills":["html", "CSS",  "javascript", "LESS", "Drupal 7", "GIT", "Responsive", "php", "jquery", "Bootstrap"]
   },
   {
     "key": "dennis",
@@ -16,7 +25,7 @@
     "logo": "img/dennis.jpg",
     "dates": "May-September, December 2016",
     "text": "At Dennis I worked as a full stack developer performing drupal maintenance, development and design of Dennis Publishing websites including <a target='_blank' href='http://www.denofgeek.com'>Den of Geek</a>, <a target='_blank' href='http://www.theweek.co.uk'>The Week</a>, <a target='_blank' href='http://www.cyclist.co.uk'>Cyclist.co.uk</a>, <a target='_blank' href='http://www.alphr.co.uk'>alphr.co.uk</a> and more.",
-    "skills":["Drupal 7","drush", "php", "javascript", "HTML", "jQuery", "SASS", "SMACSS", "grunt", "GIT", "Mercurial", "responsive development", "Kanban"]
+    "skills":["Drupal 7","drupal 8","drush", "php", "javascript", "HTML", "jQuery", "SASS", "SMACSS", "grunt", "GIT", "Mercurial", "responsive development", "Kanban"]
   },
   {
     "key": "sapient",
@@ -43,7 +52,7 @@
     "logo": "img/akqa.png",
     "dates": "November 2015",
     "text": "Working on a web app for Nike for International Womens Week. The app was built in CQ5 and a lot of my involvement involved integration with a Nike login web service. A lot of work with Ajax requests (without jQuery) and local storage.",
-    "skills":["Javascript", "HTML",  "Adobe CQ5", "OOJS", "SASS", "GIT", "Responsive", "ajax"]
+    "skills":["Javascript", "HTML",  "Adobe CQ5/AEM", "OOJS", "SASS", "GIT", "Responsive", "ajax"]
   },
   {
     "key": "mediamonks",
@@ -70,7 +79,7 @@
     "logo": "img/akqa.png",
     "dates": "June - August 2015",
     "text": "Involved in building the Contact section of the Barclays Help and Support website. The website is built on CQ5. Lots of css and animation involved in this. I was in charge of the side panel slideout, especially the css animations, that can be seen <a target='_blank' href='https://www.help.barclays.co.uk/faq/security-fraud/fraud-contact.html?contactpanel=0'>here</a>.",
-    "skills":["html","CSS", "javascript","SASS","GIT","Grunt","Responsive","CSS Animation", "Adobe CQ5"]
+    "skills":["html","CSS", "javascript","SASS","GIT","Grunt","Responsive","CSS Animation", "Adobe CQ5/AEM"]
   },
   {
     "key": "akqa",
@@ -124,7 +133,7 @@
     "logo": "img/mm.png",
     "dates": "January - March 2014",
     "text": "Building all front end for corporate website of <a target='_blank' href='http://www.glhhotels.com/'>GLH Hotels</a> and <a target='_blank' href='http:// greatfestivalofcreativity.co.uk/'>GREAT Britain</a>.",
-    "skills":["html", "CSS", "javascript", "SASS", "GIT", "JSON", "Responsive", "Google Maps", "CSS animation", "Bootstrap"]
+    "skills":["html", "CSS", "javascript", "SASS", "GIT", "JSON", "Responsive", "Google Maps", "CSS animation", "Bootstrap", "bower", "grunt"]
   },
   {
     "key": "mirror",
