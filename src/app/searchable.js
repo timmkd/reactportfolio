@@ -31,5 +31,5 @@ export class Searchable extends Component {
 
 Searchable.propTypes = {
 	text: React.PropTypes.string.isRequired,
-	search: React.PropTypes.string.isRequired
+	search: React.PropTypes.string
 };

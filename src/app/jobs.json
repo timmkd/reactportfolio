@@ -2,6 +2,7 @@
 
   {
     "key": "siteyourart",
+    "name": "siteyourart",
     "title": "Site Your Art",
     "logo": "img/sya.png",
     "dates": "2014 - ongoing",
@@ -10,6 +11,7 @@
   },
   {
     "key": "dennis",
+    "name": "dennis",
     "title": "Dennis Publishing",
     "logo": "img/dennis.jpg",
     "dates": "May-September, December 2016",
@@ -18,14 +20,16 @@
   },
   {
     "key": "sapient",
+    "name": "sapient",
     "title": "SapientNitro",
     "logo": "img/sapient.png",
     "dates": "March - May 2016",
     "text": "<p>I helped set up the front end on the bulk of a lot of pages for the new <a target='_blank' href='http://www.dove.com/'>Dove.com</a>. We used Sapient’s backbone based Unilever platform and worked closely with the designers to follow Dove’s strict design guidelines.</p><p>I also worked as a consultant for the Lynx team in developing concepts for a new Lynx campaign, advising what was possible in HTML and developing concept animations to be used in later builds and client pitches.</p>",
-    "skills":["javascript", "HTML", "SASS", "grunt", "GIT", "CSS animations"]
+    "skills":["javascript", "HTML", "SASS", "grunt", "GIT", "CSS animation"]
   },
   {
     "key": "crocodile2",
+    "name": "crocodile",
     "title": "The Crocodile",
     "logo": "img/croc.png",
     "dates": "Jan - March 2016",
@@ -34,6 +38,7 @@
   },
   {
     "key": "akqa3",
+    "name": "akqa",
     "title": "AKQA",
     "logo": "img/akqa.png",
     "dates": "November 2015",
@@ -42,6 +47,7 @@
   },
   {
     "key": "mediamonks",
+    "name": "mediamonks",
     "title": "Media Monks",
     "logo": "img/mediamonks.png",
     "dates": "October 2015",
@@ -50,6 +56,7 @@
   },
   {
     "key": "telegraph",
+    "name": "telegraph",
     "title": "The Telegraph",
     "logo": "img/telegraph.jpg",
     "dates": "October 2015",
@@ -58,6 +65,7 @@
   },
   {
     "key": "akqa2",
+    "name": "akqa",
     "title": "AKQA",
     "logo": "img/akqa.png",
     "dates": "June - August 2015",
@@ -66,6 +74,7 @@
   },
   {
     "key": "akqa",
+    "name": "akqa",
     "title": "AKQA",
     "logo": "img/akqa.png",
     "dates": "May - June 2015",
@@ -74,6 +83,7 @@
   },
   {
     "key": "crocodile",
+    "name": "crocodile",
     "title": "The Crocodile",
     "logo": "img/croc.png",
     "dates": "March - May 2015",
@@ -82,6 +92,7 @@
   },
   {
     "key": "oliveri",
+    "name": "oliveri",
     "title": "Oliveri",
     "logo": "img/oliveri.png",
     "dates": "December 2014",
@@ -90,6 +101,7 @@
   },
   {
     "key": "blackswan",
+    "name": "blackswan",
     "title": "Black Swan",
     "logo": "img/blackswan.png",
     "dates": "May - July 2014",
@@ -98,6 +110,7 @@
   },
   {
     "key": "1000heads",
+    "name": "1000heads",
     "title": "1000 Heads",
     "logo": "img/1000heads.png",
     "dates": "April 2014",
@@ -106,6 +119,7 @@
   },
   {
     "key": "mccormackmorrison",
+    "name": "mccormackmorrison",
     "title": "McCormack & Morrison",
     "logo": "img/mm.png",
     "dates": "January - March 2014",
@@ -114,6 +128,7 @@
   },
   {
     "key": "mirror",
+    "name": "mirror",
     "title": "Trinity Mirror",
     "logo": "img/mirror.png",
     "dates": "September 2013 - January 2014",
@@ -122,10 +137,11 @@
   },
   {
     "key": "velti",
+    "name": "velti",
     "title": "Velti",
     "logo": "img/velti.png",
     "dates": "January - July 2013",
     "text": "Building a Panasonic Inflight Entertainment System to work on mobile and laptop devices for clients including British Airways, KLM, Japan Airlines and Air France.",
-    "skills":["HTML", "CSS", "CSS Animations", "GIT", "Responsive Design"]
+    "skills":["HTML", "CSS", "CSS Animation", "GIT", "Responsive Design"]
   }
 ]

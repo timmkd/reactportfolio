@@ -32,7 +32,7 @@ export class Skills extends Component {
 }
 
 Skills.propTypes = {
-	skills: React.PropTypes.array.isRequired,
-	search: React.PropTypes.string.isRequired,
+	skills: React.PropTypes.array,
+	search: React.PropTypes.string,
 	onClickSkill: React.PropTypes.func
 };
