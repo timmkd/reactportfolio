@@ -59,8 +59,9 @@ export class Main extends Component {
 	updateFilteredJobs(filter) {
 		let rows = [];
 		this.state.jobs.map(job => {
+			job.hide = 'show';
 			if (filter && !this.jobMatch(job, filter)) {
-				return false;
+				job.hide = 'hide';
 			}
 			rows.push(job);
 			return true;
