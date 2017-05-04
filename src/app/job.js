@@ -4,8 +4,9 @@ import {Searchable} from './searchable';
 
 export class Job extends Component {
 	render() {
+		const className = 'job ' + this.props.job.hide;
 		return (
-			<div className="job">
+			<div className={className}>
 				<img src={this.props.job.logo}/>
 				<div className="job--text">
 					<h3 className="job--title">
