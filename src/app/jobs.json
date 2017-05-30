@@ -1,8 +1,17 @@
 [
 
   {
-    "key": "cv",
-    "name": "cv",
+    "key": "agent3",
+    "name": "agent3",
+    "title": "Agent 3",
+    "logo": "img/agent3.png",
+    "dates": "April - June 2017",
+    "text": "I developed a react-based documentation tool, that scans through react components and generates documentation based on the javascript and comments. I utilised <a href='https://github.com/reactjs/react-docgen'>react-docgen</a> to generate the JSON documentation and created an interface from the generated JSON. I also assisted in maintenance and development on some of Agent 3's Drupal 7 websites. ",
+    "skills":["html", "CSS",  "javascript", "Sass", "GIT", "webpack", "node", "react", "Drupal 7" ]
+  },
+  {
+    "key": "eikon",
+    "name": "eikon",
     "title": "Eikon Group",
     "logo": "img/eikon.png",
     "dates": "February - April 2017",
@@ -16,7 +25,7 @@
     "logo": "img/cv.png",
     "dates": "",
     "text": "This website is built using react.js. You can view the source code on <a href='https://github.com/timmkd/reactportfolio'>github</a>. Filter results using the search box above, or view the jobs as icons by clicking the icon button above. Click on each icon to view more information about the related job. Also, try inspecting the code and components in a chrome inspector.",
-    "skills":["html", "CSS",  "javascript", "react.js", "json", "Sass", "GIT", "Responsive", "yeoman"]
+    "skills":["html", "CSS",  "javascript", "react", "json", "Sass", "GIT", "Responsive", "yeoman"]
   },
   {
     "key": "siteyourart",
