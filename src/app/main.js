@@ -6,7 +6,7 @@ import {SearchBar} from './searchbar';
 import {Boxes} from './boxes';
 import {Footer} from './footer';
 import {Overlay} from './overlay';
-import {ToggleDisplay} from './toggleDisplay';
+import {Slider} from './slider';
 import axios from 'axios';
 
 export class Main extends Component {
@@ -113,10 +113,13 @@ export class Main extends Component {
 		this.setState({overlay: false});
 		document.body.classList.remove('overlay--show');
 	}
-
 	render() {
 		let overlayOutsideClass = 'overlay--outside';
 		let activeDisplayClass = 'active-display--' + this.state.activeDisplay;
+
+		const icons = (<Boxes jobs={this.state.filteredJobs} filter={this.state.filter} search={this.state.filter} onClickBox={this.handleClickBox}/>);
+		const list = (<Jobs jobs={this.state.filteredJobs} filter={this.state.filter} search={this.state.filter}/>);
+
 		if (this.state.overlay) {
 			overlayOutsideClass += ' active';
 		}
@@ -133,9 +136,7 @@ export class Main extends Component {
 					<main>
 						<div className="container">
 							<h2>Recent Jobs</h2>
-							<ToggleDisplay onToggle={this.handleToggleDisplay} activeDisplay={this.state.activeDisplay}/>
-							<Boxes jobs={this.state.filteredJobs} filter={this.state.filter} search={this.state.filter} onClickBox={this.handleClickBox}/>
-							<Jobs jobs={this.state.filteredJobs} filter={this.state.filter} search={this.state.filter}/>
+							<Slider icons={icons} list={list}/>
 						</div>
 					</main>
 					<Footer/>

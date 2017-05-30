@@ -17,13 +17,12 @@ export class Jobs extends Component {
 
 	render() {
 		let rows = [];
-		let displayClass = 'jobs jobs--display-' + this.state.display;
 		this.props.jobs.map(job => {
 			rows.push(<Job key={job.key} job={job} search={this.props.search}/>);
 			return true;
 		});
 		return (
-			<div className={displayClass}>
+			<div id="job-format-list" className="jobs">
 				<div>
 					{rows}
 				</div>

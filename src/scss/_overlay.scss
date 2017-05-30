@@ -48,10 +48,13 @@
 			right:0;
 			bottom:0;
 			background:rgba($color-primary, .4);
-			display: none;
+			pointer-events: none;
+			opacity: 0;
+			transition:opacity .5s;
 
 			.overlay--show  & {
-				display: block;
+				pointer-events:auto;
+				opacity:1;
 			}
 		}
 

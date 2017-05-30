@@ -16,12 +16,12 @@ body{
 }
 
 .container {
-	max-width: 900px;
+	max-width: $container-max;
 	margin:0 auto;
 	position:relative;
 
 	@media(min-width:$wide){
-		max-width: 1000px;
+		max-width: $container-max-wide;
 	}
 }
 
@@ -31,4 +31,9 @@ a {
 	&:hover {
 		color:$color-secondary;
 	}
+}
+
+main {
+	overflow:hidden;
+	padding-top:5px;
 }

@@ -5,21 +5,6 @@
 		margin: 0 -2.25% ($padding-base * 2);
 	}
 
-	/*hide and show according to page display toggle*/
-	main & {
-		display:block;
-		transform: translate3d(101vw,0,0);
-		transition:transform .5s, max-height 0s;
-		transition-delay:0, 1s;
-		max-height:0;
-		overflow: visible;
-	}
-
-	.active-display--icons main & {
-		display:block;
-		transform: translate3d(0,0,0);
-		max-height:1000px;
-	}
 }
 
 .box {

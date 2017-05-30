@@ -9,11 +9,6 @@ export class Boxes extends Component {
 			iconKeys: []
 		};
 		this.getIcons = this.getIcons.bind(this);
-		console.log('at contstruct', this.state.icons);
-	}
-
-	componentDidMount() {
-		console.log('at didmount', this.state.icons);
 	}
 
 	componentWillReceiveProps(props) {
@@ -21,7 +16,6 @@ export class Boxes extends Component {
 		if (icons) {
 			this.setState({icons});
 		}
-		console.log('at componentWillReceiveProps', this.state.icons, props);
 	}
 
 	getIcons(jobs) {
@@ -41,7 +35,6 @@ export class Boxes extends Component {
 	}
 
 	showOverlay(jobs) {
-		console.log('click');
 		this.props.onClickBox(jobs);
 	}
 
@@ -63,7 +56,7 @@ export class Boxes extends Component {
 		});
 
 		return (
-			<div className="boxes">
+			<div id="job-format-icons" className="boxes">
 				{rows}
 			</div>
 		);
