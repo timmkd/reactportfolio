@@ -13,7 +13,7 @@ export class SearchBar extends Component {
 
 	render() {
 		return (
-			<form>
+			<div>
 				<input
 					placeholder="Filter jobs by keyword..."
 					value={this.props.filterText}
@@ -23,7 +23,7 @@ export class SearchBar extends Component {
 					}}
 					className="searchbar"
 					/>
-			</form>
+			</div>
 		);
 	}
 }
